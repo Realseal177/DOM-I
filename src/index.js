@@ -41,14 +41,21 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
 
 console.log('project wired!')
 
-const container = document.getElementsByClassName('container');
+const textContainer = document.getElementsByClassName('cta-text');
 const nav1 = document.getElementsByTagName('nav');
-const links = document.querySelectorAll('nav a')
+
 
 const logoImage = document.getElementById('logo-img');
-logoImage.setAttribute('href', 'http://localhost:9000/img/logo.png');
+                            // example below for why brackets
+logoImage.src = siteContent.images['logo-img'];
 
+const ctaImage = document.getElementById('cta-img');
+ctaImage.src = siteContent.images['cta-img'];
 
+const accentImage = document.getElementById('middle-img');
+accentImage.src = siteContent.images['accent-img'];
+
+const links = document.querySelectorAll('nav a')
 const linksArray = Array.from(links);
 linksArray[1].textContent = 'Services';
 linksArray[2].textContent = 'Product';
@@ -57,5 +64,5 @@ linksArray[4].textContent = 'Features';
 linksArray[5].textContent = 'About';
 linksArray[6].textContent = 'Contact';
 
-
-
+const h1Text = document.querySelector('h1');
+h1Text.textContent = siteContent.cta.h1;
