@@ -40,3 +40,22 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
 };
 
 console.log('project wired!')
+
+const container = document.getElementsByClassName('container');
+const nav1 = document.getElementsByTagName('nav');
+const links = document.querySelectorAll('nav a')
+
+const logoImage = document.getElementById('logo-img');
+logoImage.setAttribute('href', 'http://localhost:9000/img/logo.png');
+
+
+const linksArray = Array.from(links);
+linksArray[1].textContent = 'Services';
+linksArray[2].textContent = 'Product';
+linksArray[3].textContent = 'Vision';
+linksArray[4].textContent = 'Features';
+linksArray[5].textContent = 'About';
+linksArray[6].textContent = 'Contact';
+
+
+
