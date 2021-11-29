@@ -57,12 +57,31 @@ accentImage.src = siteContent.images['accent-img'];
 
 const links = document.querySelectorAll('nav a')
 const linksArray = Array.from(links);
-linksArray[1].textContent = 'Services';
-linksArray[2].textContent = 'Product';
-linksArray[3].textContent = 'Vision';
-linksArray[4].textContent = 'Features';
-linksArray[5].textContent = 'About';
-linksArray[6].textContent = 'Contact';
+linksArray[0].textContent = 'Services';
+linksArray[1].textContent = 'Product';
+linksArray[2].textContent = 'Vision';
+linksArray[3].textContent = 'Features';
+linksArray[4].textContent = 'About';
+linksArray[5].textContent = 'Contact';
 
 const h1Text = document.querySelector('h1');
 h1Text.textContent = siteContent.cta.h1;
+
+const buttonText = document.querySelector('button');
+buttonText.textContent = siteContent.cta.button;
+
+const h4Content = document.querySelectorAll('h4');
+const h4Array = Array.from(h4Content);
+h4Array[0].textContent = siteContent['main-content']['features-h4'];
+h4Array[1].textContent = siteContent['main-content']['about-h4'];
+h4Array[2].textContent = siteContent['main-content']['services-h4'];
+h4Array[3].textContent = siteContent['main-content']['product-h4'];
+h4Array[4].textContent = siteContent['main-content']['vision-h4'];
+
+const textContent = document.querySelectorAll('p');
+const textArray = Array.from(textContent);
+textArray[0].textContent = siteContent['main-content']['features-content'];
+textArray[1].textContent = siteContent['main-content']['about-content'];
+textArray[2].textContent = siteContent['main-content']['services-content'];
+textArray[3].textContent = siteContent['main-content']['product-content'];
+textArray[4].textContent = siteContent['main-content']['vision-content'];
