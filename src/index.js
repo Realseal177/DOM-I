@@ -55,7 +55,7 @@ ctaImage.src = siteContent.images['cta-img'];
 const accentImage = document.getElementById('middle-img');
 accentImage.src = siteContent.images['accent-img'];
 
-const links = document.querySelectorAll('a')
+const links = document.querySelectorAll('a');
 const linksArray = Array.from(links);
 linksArray[0].textContent = 'Services';
 linksArray[1].textContent = 'Product';
@@ -63,7 +63,16 @@ linksArray[2].textContent = 'Vision';
 linksArray[3].textContent = 'Features';
 linksArray[4].textContent = 'About';
 linksArray[5].textContent = 'Contact';
-linksArray[6].textContent = siteContent['footer']['copyright'];
+
+const navItalics = document.querySelectorAll('nav a');
+const navItalicsArray = Array.from(navItalics);
+navItalicsArray[0].classList.add('italic');
+navItalicsArray[1].classList.add('italic');
+navItalicsArray[2].classList.add('italic');
+navItalicsArray[3].classList.add('italic');
+navItalicsArray[4].classList.add('italic');
+navItalicsArray[5].classList.add('italic');
+
 
 const h1Text = document.querySelector('h1');
 h1Text.textContent = siteContent.cta.h1;
@@ -93,5 +102,10 @@ textArray[5].textContent = siteContent['contact']['address'];
 textArray[6].textContent = siteContent['contact']['phone'];
 textArray[7].textContent = siteContent['contact']['email'];
 
-// const footerLink = document.getElementsByTagName('footer a')
-// footerLink.textContainer = siteContent['footer']['copyright'];
+// 'Footer' link
+linksArray[6].textContent = siteContent['footer']['copyright'];
+
+const footerBold = document.querySelectorAll('footer a');
+const footerBoldArray = Array.from(footerBold);
+footerBoldArray[0].classList.add('bold');
+
