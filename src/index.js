@@ -55,7 +55,7 @@ ctaImage.src = siteContent.images['cta-img'];
 const accentImage = document.getElementById('middle-img');
 accentImage.src = siteContent.images['accent-img'];
 
-const links = document.querySelectorAll('nav a')
+const links = document.querySelectorAll('a')
 const linksArray = Array.from(links);
 linksArray[0].textContent = 'Services';
 linksArray[1].textContent = 'Product';
@@ -63,6 +63,7 @@ linksArray[2].textContent = 'Vision';
 linksArray[3].textContent = 'Features';
 linksArray[4].textContent = 'About';
 linksArray[5].textContent = 'Contact';
+linksArray[6].textContent = siteContent['footer']['copyright'];
 
 const h1Text = document.querySelector('h1');
 h1Text.textContent = siteContent.cta.h1;
@@ -77,6 +78,8 @@ h4Array[1].textContent = siteContent['main-content']['about-h4'];
 h4Array[2].textContent = siteContent['main-content']['services-h4'];
 h4Array[3].textContent = siteContent['main-content']['product-h4'];
 h4Array[4].textContent = siteContent['main-content']['vision-h4'];
+// 'Contact' <h4> tag
+h4Array[5].textContent = siteContent['contact']['contact-h4'];
 
 const textContent = document.querySelectorAll('p');
 const textArray = Array.from(textContent);
@@ -85,3 +88,10 @@ textArray[1].textContent = siteContent['main-content']['about-content'];
 textArray[2].textContent = siteContent['main-content']['services-content'];
 textArray[3].textContent = siteContent['main-content']['product-content'];
 textArray[4].textContent = siteContent['main-content']['vision-content'];
+// 'Contact' <p> tags
+textArray[5].textContent = siteContent['contact']['address'];
+textArray[6].textContent = siteContent['contact']['phone'];
+textArray[7].textContent = siteContent['contact']['email'];
+
+// const footerLink = document.getElementsByTagName('footer a')
+// footerLink.textContainer = siteContent['footer']['copyright'];
